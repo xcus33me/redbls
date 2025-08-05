@@ -30,8 +30,8 @@ jobs:
       - name: Tidy Go modules
         run: go mod tidy
 
-      - name: Download Go modules
-        run: go mod download
+      - name: Vendor Go modules
+        run: go mod vendor
 
       - name: Run linter
         uses: golangci/golangci-lint-action@v5
